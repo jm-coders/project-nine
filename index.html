@@ -1,25 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/fontawesome.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/reponesive.css">
-  <title>Project Nine For JM-Coder</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/backTop.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reponesive.css">
+    <title>Project Nine For JM-Coder</title>
 </head>
 <body>
+<header id="header_area">
+    <nav>
+        <div class="container">
+            <div class="inner_navition_area">
+                <div class="logo_area">
+                    <a href="#header_area"><img src="img/jm-coders-logo.png" alt="LOGO"></a>
+                </div>
+                <div class="navition_area">
+                    <ul>
+                        <li><a href="#header_area" class="active">Home</a></li>
+                        <li><a href="#About_area">About</a></li>
+                        <li><a href="#service_area">Service</a></li>
+                        <li><a href="#team_area">Team</a></li>
+                        <li><a href="#footer_area">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="mobile_search_bar">
+                    <div class="serch_bar">
+                        <form action="#">
+                            <button class="back"><i class="fas fa-arrow-left"></i></button>
+                            <input type="search" name="search" id="serch_bar" placeholder="Search here ..">
+                        </form>
+                    </div>
+                     <button class="search"><img src="img/seach-btn.png" alt=""></button>
+                </div>
+                <div class="search_area">
+                    <form action="#">
+                        <div class="input_area">
+                            <input type="search" name="search" placeholder="Search..">
+                        </div>
+                        <div class="btn_area">
+                            <input type="button" value=" ">
+                        </div>
+                    </form>
+                </div> 
+                <div class="mobile_menu">
+                    <span onclick="openNav()">&#9776;</span>
+                    <div class="overly" id="myNav">
+                        <span onclick="closeNav()" class="close_btn">&times;</span>
+                        <div class="overly_content">
+                            <a onclick="closeNav()" href="#header_area" class="active">Home</a>
+                            <a onclick="closeNav()" href="#About_area">About</a>
+                            <a onclick="closeNav()" href="#service_area">Service</a>
+                            <a onclick="closeNav()" href="#team_area">Team</a>
+                            <a onclick="closeNav()" href="#team_area">Blogs</a>
+                            <a onclick="closeNav()" href="#footer_area">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner_area">
+        <div class="container inner_banner">
+            <div class="banner_image">
+                <img src="img/Dog_image.png" alt="Dog Image">
+            </div>
+            <div class="banner_text_area">
+                <h1>First I wanted to be a veterinarian</h1>
+                <p>Lorem Ipsum available but the majority have suffered alteration in some form, by injected humour randomised words.</p>
+                <div class="btn_area">
+                    <a href="#footer_area" class="btn contact_btn">Contact Us</a>
+                    <a href="#product_area" class="btn trans_btn">Our Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="About_area" class="sticky_menu">
+    <div class="inner_about container">
+        <div class="about_text">
+            <h3>As a veterinarian and lover of animals.</h3>
+            <p>Lorem Ipsum available but the majoty suffered alteration in some form, by humour randomised words.</p>
+            <a href="#" class="btn">Our Service</a>
+        </div>
+        <div class="about_vedeo">
+            <video controls poster="img/IMG_20201020_063408.jpg">
+                <source src="video/Video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+<section id="service_area">
+    <div class="container">
+        <h2>Title Here</h2>
+        <p class="little_describtion"> Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+    </div>
+    <div class="container inner_service">
+        <div class="child_service">
+            <img src="img/present_dog.jpg" alt="Present Dog">
+            <h4>Veterinarian</h4>
+            <p> Lorem Ipsum available, but the majority have suffered alteration in some.</p>
+        </div>
+        <div class="child_service">
+            <img src="img/3487424.jpg" alt="Present Dog">
+            <h4>Vaccination Care</h4>
+            <p> Lorem Ipsum available, but the majority have suffered alteration in some.</p>
+        </div>
+        <div class="child_service">
+            <img src="img/3487424.png" alt="Present Dog">
+            <h4>Dental Care</h4>
+            <p> Lorem Ipsum available, but the majority have suffered alteration in some.</p>
+        </div>
+    </div>
+</section>
+<section id="service_about">
+    <div class="container">
+        <div class="inner_service_about">
+            <div class="about_vedeo">
+                <video controls poster="img/IMG_20201020_063408.jpg">
+                    <source src="video/Video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="about_text">
+                <h3>As a veterinarian and lover of animals.</h3>
+                <p>Lorem Ipsum available but the majoty suffered alteration in some form, by humour randomised words.</p>
+                <a href="#" class="btn">Our Service</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="product_area">
+    <div class="container">
+        <h2>Title Here</h2>
+        <p class="little_describtion">Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+    </div>
+    <div class="container">
+        <div class="inner_product_area">
+            <div class="child_product">
+                <img src="img/dog-1.jpg" alt="Dog Image">
+                <span><del> $50</del> $30</span>
+                <a class="buy_btn" href="#">Buy Now</a>
+            </div>
+            <div class="child_product">
+                <img src="img/dog-2.jpg" alt="Dog Image">
+                <span><del> $40</del> $25</span>
+                <a class="buy_btn" href="#">Buy Now</a>
+            </div>
+            <div class="child_product">
+                <img src="img/dog-3.png" alt="Dog Image">
+                <span><del> $45</del>  $20</span>
+                <a class="buy_btn" href="#">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="team_area">
+    <div class="container">
+        <h2>The vetcare team</h2>
+        <p class="little_describtion">Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+    </div>
+    <div class="container">
+        <div class="inner_team_area">
+            <div class="child_team">
+                <img src="img/doctor.jpg" alt="Doctor Image">
+                <h4>Jennifer Mullen</h4>
+                <span>VETERINARY</span>
+                <div class="social_area">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="child_team">
+                <img src="img/doctor-2.jpg" alt="Doctor Image">
+                <h4>Sheeren Collins</h4>
+                <span>ADMINISTRATION</span>
+                <div class="social_area">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="child_team">
+                <img src="img/doctoc-3.jpg" alt="Doctor Image">
+                <h4>Jennifer Mullen</h4>
+                <span>VETERINARY</span>
+                <div class="social_area">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="testimonial_area">
+    <div class="container">
+        <div class="inner_testimonial">
+            <div class="child_testimonial">
+                <img src="img/love.png" alt="love image">
+                <span>+</span><span class="counter" data-count="34793">0</span>
+                <h4>Happy Clients</h4>
+            </div>
+            <div class="child_testimonial">
+                <img src="img/Health.png" alt="fjaks">
+                <span>+</span><span class="counter" data-count="45382">0</span>
+                <h4>Departament</h4>
+            </div>
+            <div class="child_testimonial">
+                <img src="img/serinc.png" alt="">
+                <span>+</span><span class="counter" data-count="54762">0</span>
+                <h4>Vaccinations</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="blogs_area">
+    <div class="container">
+        <h2>Recent Posts</h2>
+        <p class="little_describtion">Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+    </div>
+    <div class="container inner_blogs_area">
+        <div class="child_blogs">
+            <div class="image_area">
+                <img src="img/tretment.jpg" alt="Blog Image">
+            </div>
+            <div class="blogs_text">
+                <h5>As a veterinarian and lover of animals</h5>
+                <span>FEBRUARY 09, 2020</span>
+                <p>Lorem Ipsum available, but the majo rity have suffered alteration in some words which look</p>
+                <a href="#">Read More+</a>
+            </div>
+        </div>
+        <div class="child_blogs">
+            <div class="image_area">
+                <img src="img/tretment.jpg" alt="Blog Image">
+            </div>
+            <div class="blogs_text">
+                <h5>As a veterinarian and lover of animals</h5>
+                <span>FEBRUARY 09, 2020</span>
+                <p>Lorem Ipsum available, but the majo rity have suffered alteration in some words which look</p>
+                <a href="#">Read More+</a>
+            </div>
+        </div>
+        <div class="child_blogs">
+            <div class="image_area">
+                <img src="img/tretment.jpg" alt="Blog Image">
+            </div>
+            <div class="blogs_text">
+                <h5>As a veterinarian and lover of animals</h5>
+                <span>FEBRUARY 09, 2020</span>
+                <p>Lorem Ipsum available, but the majo rity have suffered alteration in some words which look</p>
+                <a href="#">Read More+</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer_area">
+    <div class="container inner_footer">
+        <div class="child_footer">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Brand Guidelines</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="child_footer">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="#">How to Order</a></li>
+                <li><a href="#">Our Product</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Promo</a></li>
+                <li><a href="#">Payment Method</a></li>
+            </ul>
+        </div>
+        <div class="child_footer">
+            <h4>Title Here</h4>
+            <p> Lorem Ipsum available, but the majorit </p>
+            <form action="https://formspree.io/f/xayveojr" method="post">
+                <input type="text" name="Email/Massage">
+                <input type="submit" value="">
+            </form>
+            <div class="social_area">
+                <ul>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<a id='backTop' class="positioning">Back To Top</a>
 
 
-
-  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 <script src="js/html5shiv.min.js"></script>
 <script src="js/respond.min.js"></script>
 <script src="js/selectivizr-min.js"></script>
+<script src="js/backTop.min.js"></script>
+<script src="js/waypoints.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
